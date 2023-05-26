@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/register-login.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="mySidebar" id="mySidebar">
+        <div class="sideBar">
+            <a href="#" id="closeSidebar" onclick="closeSidebar()" onclick="history.go(-1)">
+                <img src="Assets/back_arrow.png" alt="" style="width: 25px; height: 25px;">
+            </a>
+            <img src="Assets/Sch..png" alt="" style="height: 30px; width: 90px;">
+            <h2>Male</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <h2>Female</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <div class="sidebar-about-us">
+                <p style="margin: 0;">About Us</p>
+            </div>
+            <div class="sidebar-contact-us">
+                <p style="margin: 0;">Contact Us</p>
+            </div>
+            <p style="margin: auto 0 40px 0; font-size: small; font-weight: 500;">All right reserved. Sch 2023</p>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+    </div>
+    <div class="header-menu">
+        <label class="show-mobile"><img src="Assets/menu.png" style="height: 30px; cursor: pointer;" id="sidebar-toggle"  onclick="toggleSidebar()"></label>
+        <a href="./index.html"><img src="Assets/logo.png"></a>   
+        <a href="#" class="hidden-mobile">MEN</a>
+        <a href="#" class="hidden-mobile">WOMAN</a>
+        <a href="#" class="hidden-mobile">OTHER</a>
+        <label ><input type="text" placeholder="SEARCH" class="search"></label>
+        <a href="#" class="hidden-mobile">ABOUT US</a>
+        <a href="cart.html"><img src="Assets/shop_cart.png" style="height: 20px;"></a>
+        <a ><a href="login.html"><img src="Assets/profile.png" style="height: 30px;"></a></a>
+    </div>
+    <div class="register-tab">
+        <div class="register-top">
+            <a href="#" onclick="history.go(-1)"><img src="Assets/back_arrow.png" alt=""></a>
+            <h2>Register</h2>
+        </div>
+        <div class="register-content">
+            <div class="register-form">
+                <input type="text" placeholder="Username">
+                <input type="text" placeholder="Password">
+                <input type="text" placeholder="Address">
+                <div class="register-input-email">
+                    <input type="text" placeholder="Email">
+                    <p style="margin: auto 10px auto 10px; color: #8F8F8F;">@</p>
+                    <input class="com" type="text" placeholder=".com">
+                </div>
+                <div class="register-agree-checkbox">
+                    <input type="checkbox" style="margin: 0 10px 0 0">
+                    <img src="..//Assets/AgreeCheckbox.png" alt="" style="height: 12px; width: 180px;">
+                </div>
+                <button type="submit">Create Account</button>
+            </div>
+        </div>
+        <div class="register-image-bot">
+            <img src="Assets/register_login_bot.png" alt="" id="image_bot">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    window.addEventListener('resize', function() {
+        var image = document.getElementById('image_bot');
+        if (window.innerWidth < 700) {
+            image.src = 'Assets/register_login_bot_2.png';
+        } else {
+            image.src = 'Assets/register_login_bot.png';
+        }
+    });
+</script>

@@ -1,0 +1,189 @@
+
+.payment-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
+    margin: auto auto 0 auto;
+}
+
+.payment-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.payment-top a{
+    height: 25px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.payment-top a img{
+    height: 25px;
+    width: 30px;
+}
+
+.payment-top h2{
+    margin: 0 auto 0 auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.payment-content{
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.payment-form{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 30px 20px 50px 20px;
+}
+
+.payment-price-detail{
+    border-radius: 30px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-total-price{
+    display: inherit;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.payment-order-id p{
+    font-weight: bold;
+    font-size: small;
+    margin-top: 7px;
+}
+
+.payment-method-options{
+    margin-top: 15px;
+}
+
+.bank-options{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.bank-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    transition: ease-in-out;
+}
+
+.bank-option:hover{
+    cursor: pointer;
+}
+
+#BCA_logo{
+    width: 90px;
+    height: 30px;
+}
+
+#BOM_logo{
+    width: 120px;
+    height: 35px;
+}
+
+#VISA_logo{
+    width: 80px;
+    height: 27px;
+}
+
+#MASTER_logo{
+    width: 80px;
+    height: 35px;
+}
+
+.line {
+    margin: 20px 0 15px 0;
+}
+
+.pay-now{
+    margin-top: 40px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+    font-weight: normal;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width:1000px) {
+    .payment-content{
+        padding-bottom: 10px;
+    }
+    .payment-tab{
+        width: 100%;
+        margin-top: auto;
+    }
+    .payment-top a{
+        left: 10px;
+    }
+}
+
+@media (max-width:600px){
+    #BCA_logo{
+        width: 75px;
+        height: 25px;
+    }
+    
+    #BOM_logo{
+        width: 90px;
+        height: 26.25px;
+    }
+    
+    #VISA_logo{
+        width: 70px;
+        height: 23.625px;
+    }
+    
+    #MASTER_logo{
+        width: 80px;
+        height: 35px;
+    }
+}
+
+@media (max-width:445px){
+    #BCA_logo{
+        width: 60px;
+        height: 20px;
+    }
+    
+    #BOM_logo{
+        width: 75px;
+        height: 20px;
+    }
+    
+    #VISA_logo{
+        width: 50px;
+        height: 15px;
+    }
+    
+    #MASTER_logo{
+        width: 60px;
+        height: 25px;
+    }
+}

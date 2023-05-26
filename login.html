@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/register-login.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="mySidebar" id="mySidebar">
+        <div class="sideBar">
+            <a href="#" id="closeSidebar" onclick="closeSidebar()" onclick="history.go(-1)">
+                <img src="./Assets/back_arrow.png" alt="" style="width: 25px; height: 25px;">
+            </a>
+            <img src="./Assets/Sch..png" alt="" style="height: 30px; width: 90px;">
+            <h2>Male</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <h2>Female</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <div class="sidebar-about-us">
+                <p style="margin: 0;">About Us</p>
+            </div>
+            <div class="sidebar-contact-us">
+                <p style="margin: 0;">Contact Us</p>
+            </div>
+            <p style="margin: auto 0 40px 0; font-size: small; font-weight: 500;">All right reserved. Sch 2023</p>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+    </div>
+    <div class="header-menu">
+        <label class="show-mobile"><img src="./Assets/menu.png" style="height: 30px; cursor: pointer;" id="sidebar-toggle"  onclick="toggleSidebar()"></label>
+        <a href="./index.html"><img src="./Assets/logo.png"></a>   
+        <a href="#" class="hidden-mobile">MEN</a>
+        <a href="#" class="hidden-mobile">WOMAN</a>
+        <a href="#" class="hidden-mobile">OTHER</a>
+        <label ><input type="text" placeholder="SEARCH" class="search"></label>
+        <a href="#" class="hidden-mobile">ABOUT US</a>
+        <a href="cart.html"><img src="./Assets/shop_cart.png" style="height: 20px;"></a>
+        <a ><a href="login.html"><img src="./Assets/profile.png" style="height: 30px;"></a></a>
+    </div>
+    <div class="login-tab">
+        <div class="login-top">
+            <a href="#" onclick="history.go(-1)"><img src="./Assets/back_arrow.png" alt=""></a>
+            <h2>Login</h2>
+        </div>
+        <div class="login-content">
+            <div class="login-form">
+                <a class="google-button" href="https://www.google.com" target="_blank" id="google-button-id">
+                    <img src="./Assets/google_png.png" alt="" id="google_logo">
+                    <p>Login with&nbsp;</p><p style="font-weight: bolder; font-style: italic; margin-top: 11px;">Google&nbsp;</p><p>account</p>
+                </a>
+                <a class="facebook-button" href="https://www.facebook.com" target="_blank" id="facebook-button-id">
+                    <img src="./Assets/facebook_png.png" alt="" id="facebook_logo">
+                    <p>Login with&nbsp;</p><p style="font-weight: bolder; font-style: italic; margin-top: 11px;">Facebook&nbsp;</p><p>account</p>
+                </a>
+                <a class="sch-button" href="#">
+                    <p>Login with&nbsp;</p><p style="font-weight: bolder; font-style: italic; margin-top: 11px;">Sch.&nbsp;</p><p>account</p>
+                </a>
+                <div class="login-options">
+                    <a href="/NEW/register.html" class="goToRegister">Create an account</a>
+                    <a href="/NEW/index.html" class="goToHome">Keep Login as Guest</a>
+                </div>
+            </div>
+        </div>
+        <div class="login-image-bot">
+            <img src="./Assets/register_login_bot.png" alt="" id="image_bot">
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    window.addEventListener('resize', function() {
+        var image = document.getElementById('image_bot');
+        if (window.innerWidth < 480) {
+            image.src = './Assets/register_login_bot_2.png';
+        } else {
+            image.src = './Assets/register_login_bot.png';
+        }
+
+        var google_logo = document.getElementById('google_logo');
+        var facebook_logo = document.getElementById('facebook_logo');
+        var google_button_container = document.getElementById('google-button-id');
+        var facebook_button_container = document.getElementById('facebook-button-id');
+
+        if (window.innerWidth < 430) {
+            google_button_container.removeChild(google_logo);
+            facebook_button_container.removeChild(facebook_logo);
+        }
+    });
+</script>

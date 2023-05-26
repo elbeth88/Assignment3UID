@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/slider.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <script src="index.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="mySidebar" id="mySidebar">
+        <div class="sideBar">
+            <a href="#" id="closeSidebar" onclick="closeSidebar()" onclick="history.go(-1)">
+                <img src="./Assets/back_arrow.png" alt="" style="width: 25px; height: 25px;">
+            </a>
+            <img src="./Assets/Sch..png" alt="" style="height: 30px; width: 90px;">
+            <h2>Male</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <h2>Female</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <div class="sidebar-about-us">
+                <p style="margin: 0;">About Us</p>
+            </div>
+            <div class="sidebar-contact-us">
+                <p style="margin: 0;">Contact Us</p>
+            </div>
+            <p style="margin: auto 0 40px 0; font-size: small; font-weight: 500;">All right reserved. Sch 2023</p>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+    </div>
+    <div class="header-menu">
+        <label class="show-mobile"><img src="./Assets/menu.png" style="height: 30px; cursor: pointer;" id="sidebar-toggle"  onclick="toggleSidebar()"></label>
+        <a href="./index.html"><img src="./Assets/logo.png"></a>   
+        <a href="#" class="hidden-mobile">MEN</a>
+        <a href="#" class="hidden-mobile">WOMAN</a>
+        <a href="#" class="hidden-mobile">OTHER</a>
+        <label ><input type="text" placeholder="SEARCH" class="search"></label>
+        <a href="#" class="hidden-mobile">ABOUT US</a>
+        <a href="cart.html"><img src="./Assets/shop_cart.png" style="height: 20px;"></a>
+        <a ><a href="login.html"><img src="./Assets/profile.png" style="height: 30px;"></a></a>
+    </div>
+    <div class="slider-body">
+        <div class="slider">
+            <img src="./Assets/slider_full.png" alt="" id="slider">
+        </div>
+    </div>
+
+    <div class="filter">
+        <select name="" id="" class="filter-dropdown">
+            <option value="" selected disabled>Filter 1</option>
+            <option value="">Male</option>
+            <option value="">Female</option>
+        </select>
+        <select name="" id="" class="filter-dropdown" style="margin: 0px 20px;">
+            <option value="" selected disabled>Filter 2</option>
+            <option value="">Hat</option>
+            <option value="">Pants</option>
+            <option value="">Shirts</option>
+            <option value="">Accesories</option>
+            <option value="">Others</option>
+        </select>
+        <button class="filter-go">GO</button>
+    </div>
+
+    <div class="content">
+        <div class="grid">
+            <div class="grid-side hidden-mobile side-content side-big">
+                <img src="./Assets/side_content_1.png" alt="">
+                <label for="">Discover our new Collection</label>
+                <label for="">RNCT SERIES</label>
+                <img src="./Assets/side_content_2.png" alt="">
+            </div>
+            <div class="grid-content">
+                <a href="item_detail_page.html">
+                    <div class="content-img">
+                        <img src="./Assets/product_1.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <label style="font-size: 20px;">The Slab</label>
+                        <label>IDR 125.100,-</label>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_2.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Moth</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_3.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Fuga</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 150.000,-</label>
+                        <label>&nbsp143.100,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_4.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Koffa</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_5.png" alt="">
+                </div> 
+                <div class="name-price">
+                    <label style="font-size: 20px;">Rumi</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_6.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">S.a.S</label>
+                    <label>IDR 134.100,-</label>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_7.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Nirv</label>
+                    <label>IDR 270.000,-</label>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_8.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Flamingo ii</label>
+                    <label>IDR 155.000,-</label>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_9.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Moth</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-side hidden-mobile side-content side-mini">
+                <label for="">Male</label>
+                <label for="">T-Shirt</label>
+                <label for="">Pants</label>
+                <label for="">Shoes</label>
+                <label for="">Hat</label>
+                <label for="">Female</label>
+                <label for="">T-Shirt</label>
+                <label for="">Pants</label>
+                <label for="">Shoes</label>
+                <label for="">Hat</label>
+            </div>
+            <div class="grid-content">
+                <a href="item_detail_page.html">
+                    <div class="content-img">
+                        <img src="./Assets/product_1.png" alt="">
+                    </div>
+                    <div class="name-price">
+                        <label style="font-size: 20px;">The Slab</label>
+                        <label>IDR 125.100,-</label>
+                    </div>
+                </a>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_2.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Moth</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_3.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Fuga</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 150.000,-</label>
+                        <label>&nbsp143.100,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_4.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Koffa</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img sale">
+                    <div>
+                        <label class="sale-style">SALE</label>
+                    </div>
+                    <img src="./Assets/product_5.png" alt="">
+                </div> 
+                <div class="name-price">
+                    <label style="font-size: 20px;">Rumi</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_6.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">S.a.S</label>
+                    <label>IDR 134.100,-</label>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_7.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Nirv</label>
+                    <label>IDR 270.000,-</label>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_8.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Flamingo ii</label>
+                    <label>IDR 155.000,-</label>
+                </div>
+            </div>
+            <div class="grid-content">
+                <div class="content-img">
+                    <img src="./Assets/product_9.png" alt="">
+                </div>
+                <div class="name-price">
+                    <label style="font-size: 20px;">Moth</label>
+                    <div>
+                        <label style="text-decoration: line-through; text-decoration-color: red;">IDR 265.000,-</label>
+                        <label>&nbsp238.500,-</label>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+</body>
+
+<footer>
+    <p style="color: blue; font-weight: bold; opacity: 0.6;">The content of this site is for educational purposes.</p>
+    <img src="./Assets/logo.png" alt="">
+    <p style="color: black;">Australia | IDR</p>
+</footer>
+</html>

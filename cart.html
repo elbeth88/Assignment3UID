@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="mySidebar" id="mySidebar">
+        <div class="sideBar">
+            <a href="#" id="closeSidebar" onclick="closeSidebar()" onclick="history.go(-1)">
+                <img src="./Assets/back_arrow.png" alt="" style="width: 25px; height: 25px;">
+            </a>
+            <img src="./Assets/Sch..png" alt="" style="height: 30px; width: 90px;">
+            <h2>Male</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <h2>Female</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <div class="sidebar-about-us">
+                <p style="margin: 0;">About Us</p>
+            </div>
+            <div class="sidebar-contact-us">
+                <p style="margin: 0;">Contact Us</p>
+            </div>
+            <p style="margin: auto 0 40px 0; font-size: small; font-weight: 500;">All right reserved. Sch 2023</p>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+    </div>
+    <div class="header-menu">
+        <label class="show-mobile"><img src="./Assets/menu.png" style="height: 30px; cursor: pointer;" id="sidebar-toggle"  onclick="toggleSidebar()"></label>
+        <a href="./index.html"><img src="./Assets/logo.png"></a>   
+        <a href="#" class="hidden-mobile">MEN</a>
+        <a href="#" class="hidden-mobile">WOMAN</a>
+        <a href="#" class="hidden-mobile">OTHER</a>
+        <label ><input type="text" placeholder="SEARCH" class="search"></label>
+        <a href="#" class="hidden-mobile">ABOUT US</a>
+        <a href="cart.html"><img src="./Assets/shop_cart.png" style="height: 20px;"></a>
+        <a ><a href="login.html"><img src="./Assets/profile.png" style="height: 30px;"></a></a>
+    </div>
+    <div class="cart-tab">
+        <div class="cart-top">
+            <a href="#" onclick="history.go(-1)"><img src="./Assets/back_arrow.png" alt=""></a>
+            <h2>Cart</h2>
+        </div>
+        <div class="cart-content">
+            <div class="cart-form">
+                <div class="cart-list">
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="./Assets/product_ (1).png" alt="">
+                        </div>
+                        <div class="cart-details">
+                            <div class="cart-item-title">
+                                <h3>The Slab</h3>
+                                <img src="./Assets/Trash.png" alt="" style="width: 23px; height: 23px;">
+                            </div>
+                            <div class="cart-item-price">
+                                <h3>IDR 125,100</h3>
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-detail">
+                                    <p>Colour: Blue</p>
+                                    <p>Size: L</p>
+                                    <p>ID: 123455566</p>
+                                </div>
+                                <select name="" id="" class="cart-quantity-options" style="width: 20%;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="1">3</option>
+                                    <option value="2">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="./Assets/product_ (1).png" alt="">
+                        </div>
+                        <div class="cart-details">
+                            <div class="cart-item-title">
+                                <h3>The Slab</h3>
+                                <img src="./Assets/Trash.png" alt="" style="width: 23px; height: 23px;">
+                            </div>
+                            <div class="cart-item-price">
+                                <h3>IDR 125,100</h3>
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-detail">
+                                    <p>Colour: Blue</p>
+                                    <p>Size: L</p>
+                                    <p>ID: 123455566</p>
+                                </div>
+                                <select name="" id="" class="cart-quantity-options" style="width: 20%;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="1">3</option>
+                                    <option value="2">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="./Assets/product_ (1).png" alt="">
+                        </div>
+                        <div class="cart-details">
+                            <div class="cart-item-title">
+                                <h3>The Slab</h3>
+                                <img src="./Assets/Trash.png" alt="" style="width: 23px; height: 23px;">
+                            </div>
+                            <div class="cart-item-price">
+                                <h3>IDR 125,100</h3>
+                            </div>
+                            <div class="cart-item-details">
+                                <div class="cart-item-detail">
+                                    <p>Colour: Blue</p>
+                                    <p>Size: L</p>
+                                    <p>ID: 123455566</p>
+                                </div>
+                                <select name="" id="" class="cart-quantity-options" style="width: 20%;">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="1">3</option>
+                                    <option value="2">4</option>
+                                    <option value="1">5</option>
+                                    <option value="2">6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total-info">
+                <div class="cart-total-info-group">
+                    <div>
+                        <div class="cart-product-total-price">
+                            <p>PRODUCTS TOTAL</p>
+                            <p style="font-weight: 500;">IDR 555,400</p>
+                        </div>
+                        <div class="cart-tax">
+                            <P>TAX</P>
+                            <P style="font-weight: 500;">IDR 55,540</P>
+                        </div>
+                    </div>
+                    <div class="cart-end-view">
+                        <div class="cart-real-total">
+                            <p>TOTAL</p>
+                            <p style="font-weight: 500;">IDR 610,940</p>
+                        </div>
+                        <a href="./payment.html" class="cart-purchasing">Purchasing</a>
+                        <a href="./index.html" class="cart-continue-shopping">Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p style="color: blue; font-weight: bold; opacity: 0.6;">The content of this site is for educational purposes.</p>
+    <img src="./Assets/logo.png" alt="">
+    <p style="color: black;">Australia | IDR</p>
+</footer>
+
+</html>
+
+<script>
+        
+    const options = document.querySelectorAll('.bank-option');
+
+    options.forEach(option => {
+    option.addEventListener('click', () => {
+        
+        options.forEach(option => {
+        option.classList.remove('selected');
+        });
+
+        option.classList.add('selected');
+    });
+    });
+</script>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <link rel="stylesheet" href="./css/color.css">
+    <script src="index.js"></script>
+
+</head>
+<body>
+    <div class="mySidebar" id="mySidebar">
+        <div class="sideBar">
+            <a href="#" id="closeSidebar" onclick="closeSidebar()" onclick="history.go(-1)">
+                <img src="./Assets/back_arrow.png" alt="" style="width: 25px; height: 25px;">
+            </a>
+            <img src="./Assets/Sch..png" alt="" style="height: 30px; width: 90px;">
+            <h2>Male</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <h2>Female</h2>
+            <h3>T-shirt</h3>
+            <h3>Pants</h3>
+            <h3>Shoes</h3>
+            <h3>Hat</h3>
+            <h3>T-shirt</h3>
+            <div class="sidebar-about-us">
+                <p style="margin: 0;">About Us</p>
+            </div>
+            <div class="sidebar-contact-us">
+                <p style="margin: 0;">Contact Us</p>
+            </div>
+            <p style="margin: auto 0 40px 0; font-size: small; font-weight: 500;">All right reserved. Sch 2023</p>
+        </div>
+    </div>
+    <div class="promo">
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+        <div class="promo-child hidden-mobile">
+            <label>Ramadhan Sale</label>
+            <label class="disc">Up to 50%</label>
+        </div>
+    </div>
+    <div class="header-menu">
+        <label class="show-mobile"><img src="./Assets/menu.png" style="height: 30px; cursor: pointer;" id="sidebar-toggle"  onclick="toggleSidebar()"></label>
+        <a href="./index.html"><img src="./Assets/logo.png"></a>   
+        <a href="#" class="hidden-mobile">MEN</a>
+        <a href="#" class="hidden-mobile">WOMAN</a>
+        <a href="#" class="hidden-mobile">OTHER</a>
+        <label ><input type="text" placeholder="SEARCH" class="search"></label>
+        <a href="#" class="hidden-mobile">ABOUT US</a>
+        <a href="cart.html"><img src="./Assets/shop_cart.png" style="height: 20px;"></a>
+        <a ><a href="login.html"><img src="./Assets/profile.png" style="height: 30px;"></a></a>
+    </div>
+    <div class="payment-tab">
+        <div class="payment-top">
+            <a href="#" onclick="history.go(-1)"><img src="./Assets/back_arrow.png" alt=""></a>
+            <h2>Payment</h2>
+        </div>
+        <div class="payment-content">
+            <div class="payment-form">
+                <div class="payment-price-detail">
+                    <div class="payment-total-price">
+                        <h3>Total</h3>
+                        <h3 style="font-weight: 500;">IDR. 610,940</h3>
+                    </div>
+                    <div class="payment-order-id"><p>Order ID #232445</p></div>
+                </div>
+                <div class="payment-method-options">
+                    <p style="font-size: smaller; color: #9C9C9C; margin-top: 0;">Choose payment method</p>
+                    <p style="font-weight: bolder;">Bank</p>
+                    <div class="bank-options">
+                        <div class="bank-option">
+                            <img src="./Assets/BCA_logo.png" alt="" id="BCA_logo">
+                        </div>
+                        <div class="bank-option">
+                            <img src="./Assets/BOM_logo.png" alt="" id="BOM_logo">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <p style="font-weight: bolder;">Credit Card</p>
+                    <div class="bank-options">
+                        <div class="bank-option">
+                            <img src="./Assets/VISA_logo.png" alt="" id="VISA_logo">
+                        </div>
+                        <div class="bank-option">
+                            <img src="./Assets/MASTER_logo.png" alt="" id="MASTER_logo">
+                        </div>
+                    </div>
+                </div>
+                <a href="./payment-successful.html" class="pay-now">Pay Now</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <p style="color: blue; font-weight: bold; opacity: 0.6;">The content of this site is for educational purposes.</p>
+    <img src="./Assets/logo.png" alt="">
+    <p style="color: black;">Australia | IDR</p>
+</footer>
+
+</html>
+
+<script>
+        
+    const options = document.querySelectorAll('.bank-option');
+
+    options.forEach(option => {
+    option.addEventListener('click', () => {
+        
+        options.forEach(option => {
+        option.classList.remove('selected');
+        });
+
+        option.classList.add('selected');
+    });
+    });
+</script>

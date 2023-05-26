@@ -1,0 +1,61 @@
+.payment-successful-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    margin: auto auto 0 auto;
+    padding-bottom: 20px;
+}
+
+.payment-successful-content{
+    width: 100%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checklist-symbol{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.checklist-symbol img{
+    width: 80px;
+    height: 65.232px;
+}
+
+.payment-successful-content h2{
+    text-align: center;
+}
+
+.payment-successful-content p{
+    font-size: x-small;
+    text-align: center;
+}
+
+.ps-continue-shopping{
+    width: 60%;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 10px 10px 10px;
+    font-weight: normal;
+    font-size: medium;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (max-width:1000px) {
+    .payment-successful-tab{
+        width: 100%;
+    }
+}

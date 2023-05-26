@@ -1,0 +1,355 @@
+.filter-dropdown{
+    background-color: #2A2A2A;
+    color: white;
+}
+
+.filter-go{
+    background-color: #FF3401;
+    color: white;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    color: #f2f2f2;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.grid{
+    background-color: #D9EAE480;
+}
+
+.content-img{
+    background-color: white;
+}
+
+.grid-content a{
+    color: black;
+}
+
+.side-big{
+    background-color: red;
+}
+
+.side-mini{
+    background-color: black;
+}
+
+.side-mini label{
+    color: white;
+}
+
+.cart-content{
+    background-color: #F2F2F2;
+}
+
+.cart-item{
+    background-color: #D9EAE4;
+}
+
+.cart-item-image{
+    background-color: white;
+}
+
+.cart-item-detail p{
+    color: #6F6F6F;
+}
+
+.cart-quantity-options{
+    border: 2px solid #BBBBBB;
+}
+
+.cart-quantity-options option{
+    background-color: #D9EAE4;
+}
+
+.cart-total-info{
+    background-color: white;
+}
+
+.sale-style{
+    background-color: red;
+    color: white;
+}
+
+.cart-product-total-price{
+    color: #565656;
+}
+
+.cart-tax{
+    color: #565656;
+}
+
+.cart-real-total{
+    color: #565656;
+    background-color: #EEEEEE;
+}
+
+.cart-purchasing{
+    background-color: #00DBAB;
+    color: white;
+}
+
+.cart-purchasing:hover{
+    background-color: #00b991;
+}
+
+.cart-continue-shopping{
+    border: 1px solid #B8B8B8;
+    background-color: white;
+    color: #B8B8B8;
+}
+
+.cart-continue-shopping:hover{
+    background-color: #f4f4f4;
+}
+
+.detail-content{
+    background-color: #D9EAE4;
+}
+
+.image{
+    background-color: white;
+}
+
+.size-selector{
+    background-color: white;
+}
+
+.size-selected{
+    background-color: orangered;
+}
+
+.color-selected{
+    outline: 3px solid orangered;
+}
+
+.qty-select{
+    background-color: #D9EAE4;
+    border: 1px solid black;
+}
+
+.size-guide-row{
+    color: grey;
+}
+
+.btn{
+    border: 1px solid grey;
+}
+
+.action a{
+    color: black;
+}
+
+.register-content{
+    background-color: #DDEDE7;
+}
+
+.register-form input::placeholder{
+    color: #D6D6D6;
+}
+
+.register-form button{
+    background-color: #00DBAB;
+    color: white;
+}
+
+.register-form button:hover{
+    background-color: #00b991;
+}
+
+.login-content{
+    background-color: #DDEDE7;
+}
+
+.login-form a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.google-button{
+    background-color: white;
+}
+
+.google-button:hover{
+    background-color: white;
+}
+
+.google-button p{
+    color: black;
+}
+
+.facebook-button{
+    background-color: #4064AC;
+}
+
+.facebook-button:hover{
+    background-color: #3c5ea2;
+}
+
+.sch-button{
+    background-color: black;
+}
+
+.goToRegister{
+    color: #3b60aa !important;
+}
+
+.goToRegister:hover{
+    color: #163e8f !important;
+}
+
+.goToHome{
+    color: #8F8F8F !important;
+}
+
+.goToHome:hover{
+    color: #7a7a7a !important;
+}
+
+.payment-content{
+    background-color: #F2F2F2;
+}
+
+.payment-price-detail{
+    background-color: #717171;
+    color: white;
+}
+
+.bank-option{
+    background-color: white;
+}
+
+.bank-option:hover{
+    background-color: #e3e3e3;
+}
+
+.line {
+    border-top: 1px solid #BCBCBC;
+}
+
+.pay-now{
+    background-color: #00DBAB;
+    color: white;
+}
+
+.pay-now:hover{
+    background-color: #00b991;
+}
+
+.selected {
+    border: 0.2px solid orangered;
+}
+
+.payment-successful-tab{
+    background-color: #F2F2F2;
+}
+
+.checklist-symbol{
+    border: solid 12px #00DBAB;
+}
+
+.payment-successful-content h2{
+    color: #00DBAB;
+}
+
+.payment-successful-content p{
+    color: #717171;
+}
+
+.ps-continue-shopping{
+    background-color: #00DBAB;
+    color: white;
+}
+
+.ps-continue-shopping:hover{
+    background-color: #00b991;
+}
+
+/* NAVBAR */
+
+.promo {
+    background-color: #2A2A2A;
+}
+
+.promo-child{
+    color: white;
+}
+
+.disc{
+    background-color: red;
+}
+
+.header-menu a{
+    color: black;
+}
+
+.search{
+    background-color: #DEDEDE;
+}
+
+.mySidebar {
+    background: #f1f1f1;
+}
+
+.sidebar-open {
+    background-color: #070707;
+}
+
+.sideBar{
+    color: white;
+}
+
+.sidebar-about-us{
+    background-color: orangered;
+}
+
+.sidebar-contact-us{
+    background-color: orangered;
+}
+
+.sidebar-about-us:hover{
+    background-color: rgb(235, 63, 0);
+}
+
+.sidebar-contact-us:hover{
+    background-color: rgb(235, 63, 0);
+}
+
+/* SLIDER */
+
+.slider {
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider-nav a {
+	background-color: #fff;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #D9EAE4;
+}
