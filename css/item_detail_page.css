@@ -188,7 +188,7 @@
     text-decoration: none;
 }
 
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .detail-content{
         padding-bottom: 10px;
     }
@@ -210,8 +210,11 @@
 }
 
 @media (max-width:700px) {
+    .detail-tab{
+        margin: 0px 0px;
+    }
     .detail-content{
-        padding: 100px 30px;
+        padding: 100px 0px;
     }
     .detail-image-bot{
         height: 150px;
